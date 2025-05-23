@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Boîte à Plaintes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 15px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Exprime-toi ici</h2>
+    <form action="https://formsubmit.co/hugo.pouillot@gmail.com" method="POST">
+        <input type="text" name="nom" placeholder="Ton nom (facultatif)">
+        <textarea name="plainte" rows="5" placeholder="Explique ta plainte ici" required></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit">Envoyer la plainte</button>
+    </form>
+</body>
+</html>
